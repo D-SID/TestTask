@@ -1,4 +1,4 @@
-﻿using Validator.Properties.Enums;
+﻿using Validator.Enums;
 
 namespace Validator.Models
 {

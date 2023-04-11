@@ -1,6 +1,6 @@
-﻿namespace Validator 
+﻿namespace Validator
 {
-    class Validator
+    class Program
     {
         static void Main(string[] args)
         {
@@ -31,7 +31,7 @@
                 {
                     Console.WriteLine(@$"Password validation: {row.ValidationStatus} by {row.Symbol} {row.MinCount}-{row.MaxCount}    {row.Password}");
                 }
-                var validPass = rows.Count(x => x.ValidationStatus == Properties.Enums.ValidationStatus.Success);
+                var validPass = rows.Count(x => x.ValidationStatus == Enums.ValidationStatus.Success);
                 Console.WriteLine("The password check is complete.");
                 Console.WriteLine(@$"Valid passwords: {validPass}/{rows.Count}");
                 Console.ReadLine();

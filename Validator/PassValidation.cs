@@ -1,5 +1,5 @@
-﻿using Validator.Models;
-using Validator.Properties.Enums;
+﻿using Validator.Enums;
+using Validator.Models;
 
 namespace Validator
 {

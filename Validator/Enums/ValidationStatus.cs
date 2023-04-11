@@ -1,4 +1,4 @@
-﻿namespace Validator.Properties.Enums
+﻿namespace Validator.Enums
 {
     public enum ValidationStatus
     {
