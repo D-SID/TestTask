@@ -23,8 +23,10 @@
             {
                 RowReader rowReader = new();
                 PassValidation validation = new();
+
                 var rows = rowReader.Parse(lines);
                 validation.ValidateRows(rows);
+
                 foreach ( var row in rows )
                 {
                     Console.WriteLine(@$"Password validation: {row.ValidationStatus} by {row.Symbol} {row.MinCount}-{row.MaxCount}    {row.Password}");
